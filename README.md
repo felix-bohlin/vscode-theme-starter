@@ -19,10 +19,10 @@ Get started with your first VS Code Theme!
 ## 2. Change your theme!
 
 The easiest way is to:
-   a. Use the theme you want to change
-   b. `CTRL/CMD + SHIFT + P`: Developer: Generate Theme From Current Settings
-   c. Paste that object into `my-theme.js`
-   d. Press `F5` to debug your theme
+1. Use the theme you want to change
+2. `CTRL/CMD + SHIFT + P`: Developer: Generate Theme From Current Settings
+3. Paste that object into `my-theme.js`
+4. Press `F5` to debug your theme
 
 ## 3. Misc
 - [ ] Change README
