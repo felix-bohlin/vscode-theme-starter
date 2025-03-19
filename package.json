@@ -1,0 +1,48 @@
+{
+  "name": "<PACKAGE NAME> (e.g. cozy-dark)",
+  "displayName": "<THEME NAME> (e.g. Cozy Dark)",
+  "description": "<YOUR THEME DESCRIPTION HERE> (e.g. A cozy dark theme for Visual Studio Code)",
+  "author": "<YOUR NAME HERE> (e.g. My Name)",
+  "publisher": "<YOUR PUBLISHER NAME HERE> (e.g. my-name)",
+  "version": "1.0.0",
+  "icon": "<THEME ICON> (e.g. ./icon.png)",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "<GITHUB REPO URL>"
+  },
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "keywords": [
+    "ADD",
+    "YOUR",
+    "KEYWORDS",
+    "eg: dark, cozy, theme, vscode"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "<THEME NAME> (e.g. Cozy Dark)",
+        "uiTheme": "<THEME VARIANT> (e.g. dark)",
+        "path": "./my-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "nodemon --watch src src/index.js",
+    "build": "node src/index.js",
+    "package": "pnpm build && vsce package",
+    "publish:patch": "vsce publish patch",
+    "publish": "vsce publish minor",
+    "publish:major": "vsce publish major"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1",
+    "vsce": "^2.15.0"
+  }
+}
